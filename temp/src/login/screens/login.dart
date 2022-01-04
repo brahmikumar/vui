@@ -7,7 +7,7 @@ class Login extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        child: const Text("Login"),
+        child: const Text("Login login"),
       ),
     );
   }
