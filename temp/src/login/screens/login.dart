@@ -70,7 +70,6 @@ class _LoginState extends State<Login> {
                           return null;
                         },
                         controller: userPasswordController,
-                        keyboardType: TextInputType.visiblePassword,
                         decoration: const InputDecoration(
                           labelText: "Enter Password",
                           border:  OutlineInputBorder(
