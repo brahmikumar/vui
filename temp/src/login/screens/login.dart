@@ -50,7 +50,6 @@ class _LoginState extends State<Login> {
                           }
                           return null;
                         },
-
                         controller: userNameController,
                         keyboardType: TextInputType.text,
                         decoration: const InputDecoration(
@@ -88,7 +87,7 @@ class _LoginState extends State<Login> {
                           },
                           child: const Text("Continue", style: TextStyle(color: Colors.black, fontSize: 20),),
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
