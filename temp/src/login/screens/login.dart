@@ -70,7 +70,7 @@ class _LoginState extends State<Login> {
                           return null;
                         },
                         controller: userPasswordController,
-
+                        obscureText: true,
                         decoration: const InputDecoration(
                           labelText: "Enter Password",
                           /*border:  OutlineInputBorder(
