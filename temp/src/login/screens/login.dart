@@ -55,8 +55,8 @@ class _LoginState extends State<Login> {
                         keyboardType: TextInputType.text,
                         decoration: const InputDecoration(
                           labelText: "Enter Login ID",
-                          border:  OutlineInputBorder(
-                              borderSide:  BorderSide(color: Colors.teal)),
+                          /*border:  OutlineInputBorder(
+                              borderSide:  BorderSide(color: Colors.teal)),*/
                         ),
                       ),
                       const SizedBox(
@@ -73,8 +73,8 @@ class _LoginState extends State<Login> {
 
                         decoration: const InputDecoration(
                           labelText: "Enter Password",
-                          border:  OutlineInputBorder(
-                              borderSide:  BorderSide(color: Colors.teal)),
+                          /*border:  OutlineInputBorder(
+                              borderSide:  BorderSide(color: Colors.teal)),*/
                         ),
                       ),
                       const SizedBox(
