@@ -50,11 +50,16 @@ class _LoginState extends State<Login> {
                           }
                           return null;
                         },
+
                         controller: userNameController,
                         keyboardType: TextInputType.text,
                         decoration: const InputDecoration(
                           labelText: "Enter Login ID",
+                          border:  OutlineInputBorder(
+                              borderSide:  BorderSide(color: Colors.teal)),
+
                         ),
+
                       ),
                       TextFormField(
                         validator: (value) {
