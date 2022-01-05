@@ -57,9 +57,10 @@ class _LoginState extends State<Login> {
                           labelText: "Enter Login ID",
                           border:  OutlineInputBorder(
                               borderSide:  BorderSide(color: Colors.teal)),
-
                         ),
-
+                      ),
+                      const SizedBox(
+                        height: 20,
                       ),
                       TextFormField(
                         validator: (value) {
@@ -72,6 +73,8 @@ class _LoginState extends State<Login> {
                         keyboardType: TextInputType.visiblePassword,
                         decoration: const InputDecoration(
                           labelText: "Enter Password",
+                          border:  OutlineInputBorder(
+                              borderSide:  BorderSide(color: Colors.teal)),
                         ),
                       ),
                       const SizedBox(
@@ -89,22 +92,6 @@ class _LoginState extends State<Login> {
                     ],
                   ),
                 ),
-                /*Form(
-                  key: _loginFormKey,
-                  child: TextFormField(
-                    validator: (value) {
-                      if (value!.isEmpty) {
-                        return "Please Enter Password";
-                      }
-                      return null;
-                    },
-                    controller: userPasswordController,
-                    keyboardType: TextInputType.text,
-                    decoration: const InputDecoration(
-                      labelText: "Enter Login Password",
-                    ),
-                  ),
-                ),*/
               ],
             ),
           ),
