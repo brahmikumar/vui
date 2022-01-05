@@ -70,6 +70,7 @@ class _LoginState extends State<Login> {
                           return null;
                         },
                         controller: userPasswordController,
+
                         decoration: const InputDecoration(
                           labelText: "Enter Password",
                           border:  OutlineInputBorder(
@@ -85,7 +86,7 @@ class _LoginState extends State<Login> {
                           onPressed: () {
                             validate();
                           },
-                          child: const Text("Save", style: TextStyle(color: Colors.black, fontSize: 20),),
+                          child: const Text("Continue", style: TextStyle(color: Colors.black, fontSize: 20),),
                         ),
                       )
                     ],
