@@ -85,7 +85,7 @@ class _LoginState extends State<Login> {
                           onPressed: () {
                             validate();
                           },
-                          child: const Text("Login", style: TextStyle(color: Colors.black, fontSize: 20),),
+                          child: const Text("Continue", style: TextStyle(color: Colors.black, fontSize: 20),),
                         ),
                       ),
                     ],
