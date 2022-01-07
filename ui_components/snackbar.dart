@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vinvestor/vui/colors/colors.dart';
 
 class ToastMessage{
 
@@ -6,7 +7,7 @@ class ToastMessage{
     ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content:  Text(message),
-          duration: const Duration(seconds: 5),
+          duration: const Duration(seconds: 2),
         )
     );
   }
@@ -15,8 +16,8 @@ class ToastMessage{
     ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content:  Text(message),
-          duration: const Duration(seconds: 5),
-          backgroundColor: Colors.red,
+          duration: const Duration(seconds: 2),
+          backgroundColor: AppColors.colorRedPrimary,
         )
     );
   }
@@ -25,10 +26,11 @@ class ToastMessage{
     ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content:  Text(message),
-          duration: const Duration(seconds: 5),
+          duration: const Duration(seconds: 2),
           action: SnackBarAction(
             label: actionLabel,
             onPressed: snackBarAction,
+            textColor: AppColors.colorDarkMintSecondary,
           ),
         )
     );
