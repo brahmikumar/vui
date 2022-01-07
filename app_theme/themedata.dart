@@ -20,6 +20,7 @@ class AppThemeData{
       fontFamily: 'TestFoundersGrotesk',
       elevatedButtonTheme: AppButtonTheme.elevatedButtonTheme(),
       textButtonTheme: AppButtonTheme.textButtonTheme(),
+      outlinedButtonTheme: AppButtonTheme.outlinedButtonTheme(),
       cardTheme: AppCardTheme.appCardTheme(),
     );
   }

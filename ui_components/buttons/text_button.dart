@@ -9,7 +9,7 @@ class AppTextButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: onCustomButtonPressed,
-      child: Text(title, style: TextStyle(color: Colors.black, fontSize: 20),),
+      child: Text(title, style: const TextStyle(color: Colors.black, fontSize: 20),),
     );
   }
 }

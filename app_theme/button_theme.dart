@@ -6,11 +6,14 @@ class AppButtonTheme{
     return ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         primary: AppColors.colorSeqBlueFour,
-        onPrimary: Colors.white,
+        onPrimary: AppColors.colorSeqBlueOne,
         minimumSize: Size(88, 56),
         padding: EdgeInsets.symmetric(horizontal: 16),
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(4)),
+        ),
+        textStyle: const TextStyle(
+          fontSize: 20,
         ),
       ),
     );
@@ -19,11 +22,20 @@ class AppButtonTheme{
   static textButtonTheme(){
     return TextButtonThemeData(
       style: TextButton.styleFrom(
-        primary: Colors.white,
         minimumSize: const Size(18, 10),
         textStyle: const TextStyle(
-          fontSize: 18,
+          fontSize: 20,
           decoration: TextDecoration.underline,
+        ),
+      ),
+    );
+  }
+
+  static outlinedButtonTheme(){
+    return OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(
+        textStyle: const TextStyle(
+          fontSize: 20,
         ),
       ),
     );

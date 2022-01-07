@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vinvestor/vui/colors/colors.dart';
 
 class AppOutlinedButton extends StatelessWidget {
   String title;
@@ -9,7 +10,10 @@ class AppOutlinedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return OutlinedButton(
       onPressed: onCustomButtonPressed,
-      child: Text(title, style: TextStyle(color: Colors.black, fontSize: 20),),
+      child: Text(title, style: const TextStyle(color: AppColors.colorSeqBlueFive),),
+      style: OutlinedButton.styleFrom(
+        side: const BorderSide(width: 1.0, color: AppColors.colorAlphaDeepBlue),
+      )
     );
   }
 }

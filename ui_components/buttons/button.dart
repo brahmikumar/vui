@@ -9,7 +9,7 @@ class VButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: onCustomButtonPressed,
-      child: Text(title, style: TextStyle(color: Colors.black, fontSize: 20),),
+      child: Text(title),
     );
   }
 }

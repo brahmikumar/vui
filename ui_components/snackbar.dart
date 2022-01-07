@@ -27,7 +27,7 @@ class ToastMessage{
           content:  Text(message),
           duration: const Duration(seconds: 5),
           action: SnackBarAction(
-            label: 'ACTION',
+            label: actionLabel,
             onPressed: snackBarAction,
           ),
         )
