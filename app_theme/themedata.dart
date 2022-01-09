@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:vinvestor/vui/app_theme/appbar_theme.dart';
 import 'package:vinvestor/vui/app_theme/button_theme.dart';
 import 'package:vinvestor/vui/app_theme/card_theme.dart';
+import 'package:vinvestor/vui/app_theme/dialog_theme.dart';
 import 'package:vinvestor/vui/app_theme/text_theme.dart';
-import 'package:vinvestor/vui/colors/colors.dart';
 
 class AppThemeData{
   static appThemeData(){
@@ -14,6 +14,7 @@ class AppThemeData{
       textButtonTheme: AppButtonTheme.textButtonTheme(),
       outlinedButtonTheme: AppButtonTheme.outlinedButtonTheme(),
       cardTheme: AppCardTheme.appCardTheme(),
+      dialogTheme: AppDialogTheme.appDialogTheme(),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vinvestor/vui/ui_components/buttons.dart';
 
 class ConfirmBottomModelSheet extends StatefulWidget {
   String? title;
@@ -25,43 +26,46 @@ class _ConfirmBottomModelSheetState extends State<ConfirmBottomModelSheet> {
             children: [
               Padding(
                 padding: const EdgeInsets.symmetric(vertical:15.0, horizontal: 15),
-                child: Text("${widget.title}", style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
+                child: Text("${widget.title}", style: Theme.of(context).textTheme.headline1),
               ),
+
               const Divider(),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical:15.0, horizontal: 15),
                 child: Text("${widget.message}"),
               ),
               const Divider(),
+
+              const SizedBox(height: 10,),
               Row(
                 children: [
                   Expanded(
                     flex: 1,
                     child: Center(
-                      child: OutlinedButton(
-                        onPressed: (){
+                      child: outlinedButton(
+                        widget.action![1],
+                        (){
                           widget.onConfirmChanged!(false);
                           Navigator.pop(context);
                         },
-                        child: Text(widget.action![1]),
                       ),
                     ),
                   ),
                   Expanded(
                     flex: 1,
                     child:Center(
-                      child: ElevatedButton(
-                        onPressed: (){
-                          widget.onConfirmChanged!(true);
+                      child: button(
+                        widget.action![1],
+                        (){
+                          widget.onConfirmChanged!(false);
                           Navigator.pop(context);
                         },
-                        child: Text(widget.action![0]),
                       ),
                     ),
                   ),
                 ],
               ),
-              const SizedBox(height: 10,),
+              const SizedBox(height: 40,),
             ],
           ),
         ),
