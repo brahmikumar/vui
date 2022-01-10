@@ -17,18 +17,6 @@ class AppAlertDialog extends StatelessWidget {
             onPressed: actions[index]["action"],
             child: Text(actions[index]["title"]),
           ),
-
-        /*ListView.builder(
-          itemCount: actions.length,
-          //shrinkWrap: true,
-          //primary: false,
-          itemBuilder: (context, index){
-            return TextButton(
-              onPressed: actions[index]["action"],
-              child: Text(actions[index]["title"]),
-            );
-          },
-        ),*/
       ],
     );
   }

@@ -7,7 +7,7 @@ class AppButtonTheme{
       style: ElevatedButton.styleFrom(
         primary: AppColors.colorSeqBlueFour,
         onPrimary: AppColors.colorSeqBlueOne,
-        minimumSize: Size(88, 56),
+        minimumSize: Size(88, 45),
         padding: EdgeInsets.symmetric(horizontal: 16),
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(4)),
@@ -37,6 +37,7 @@ class AppButtonTheme{
         textStyle: const TextStyle(
           fontSize: 20,
         ),
+        minimumSize: const Size(88, 45),
       ),
     );
   }

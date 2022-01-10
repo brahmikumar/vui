@@ -15,3 +15,7 @@ Widget mediumRiskLabel(text) {
 Widget highRiskLabel(text) {
   return Text(text, style: const TextStyle(color: Color(0xffA80B00)));
 }
+
+Widget headlineLabel(context,text) {
+  return Text(text, style: Theme.of(context).textTheme.headline1);
+}

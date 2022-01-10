@@ -55,9 +55,9 @@ class _ConfirmBottomModelSheetState extends State<ConfirmBottomModelSheet> {
                     flex: 1,
                     child:Center(
                       child: button(
-                        widget.action![1],
+                        widget.action![0],
                         (){
-                          widget.onConfirmChanged!(false);
+                          widget.onConfirmChanged!(true);
                           Navigator.pop(context);
                         },
                       ),
